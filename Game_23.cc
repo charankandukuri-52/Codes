@@ -125,12 +125,19 @@ freopen("Error.txt", "w", stderr);
 
 //Code
 
-
+ll fn(ll a, ll b, ll moves) {
+	if(a == b) return moves;
+	if(a > b) return -1;
+    debug(a)
+	return max(fn(a*2,b,moves+1),fn(a*3,b,moves+1));
+}
 
 void asquare()
 {
     ll a,b; cin>>a>>b;
-    
+    ll m = 0;
+    cout << fn(a,b,m)<<endl;
+
 }
 
 
