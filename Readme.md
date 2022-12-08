@@ -1,8 +1,10 @@
 # Codes
 
-# smallest positive number that is evenly divisible by all of the numbers from 1 to n 
-
+# smallest positive number that is evenly divisible by all of the numbers from 1 to n
     Ans for this would be lcm of all the numbers from 1 to n
+    
+    T.C : O(nlogn) 
+    S.C : O(1) 
     
     Code to find lcm of fist n numbers: 
     
@@ -18,5 +20,8 @@
                     return fn(a,b);
                 }
                 
+               protperty:  lcm(a,b,c) = lcm(lcm(a,b),c)
+         
+               
                 
                 in fn initial values for a,b would be n,n-1 respectively 
