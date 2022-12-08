@@ -25,3 +25,12 @@
                
                 
                 in fn initial values for a,b would be n,n-1 respectively 
+
+
+#           Largest Prime Factor for a given number 
+
+             for(ll i=1; i*i<=n ;i++) {
+                    if(n%i == 0 and n!=i)   {
+                       n/=i;
+                    }
+                }
