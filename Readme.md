@@ -33,8 +33,24 @@
                     if(n%i == 0 and n!=i)   {
                        n/=i;
                     }
-                }
-            
+                    
+ #              Pythogaran Triplets
+ 
+ 
+                              ll n; cin>>n;
+                            ll p = 1;
+                           for(ll i=1;i<=n/3;i++) {
+                            for(ll j=i+1;j<= n/2; j++) {
+                                ll k = n-i-j;
+                                if(i*i + j*j == k*k) {
+                                    p = i*j*k;
+                                    break;
+                                } 
+                            }
+                           }
+                           cout << p << endl;
+                          }
+
 #               Seive Method to find prime numbers upto N
 
                     vector<bool> primes(n+1,true);
